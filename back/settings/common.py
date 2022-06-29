@@ -16,6 +16,8 @@ def get_env(key, default=None, optinal=False):
         return default
     elif not optinal:
         raise ValueError(f"Environment variable {key} was not defined")
+
+
 # END GET ENV UTIL
 
 
@@ -50,7 +52,7 @@ DJANGO_APPS = (
     "django.contrib.admindocs",
 )
 
-THIRD_PARTY_APPS = ("rest_framework",)
+THIRD_PARTY_APPS = ("rest_framework", "src.apps.scrapper")
 
 # Apps specific for this project go here.
 LOCAL_APPS = ("src.api",)
