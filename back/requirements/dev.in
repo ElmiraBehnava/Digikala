@@ -1,0 +1,4 @@
+pip-tools==6.1.0
+black==21.5b1
+isort==5.8.0
+coverage==5.5
