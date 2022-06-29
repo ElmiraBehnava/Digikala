@@ -6,24 +6,24 @@ from socket import gethostbyname, gethostname
 
 from settings.common import *
 
-## DEBUG CONFIGURATION
+# DEBUG CONFIGURATION
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
-## END DEBUG CONFIGURATION
+# END DEBUG CONFIGURATION
 
-## EMAIL CONFIGURATION
+# EMAIL CONFIGURATION
 EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
-## END EMAIL CONFIGURATION
+# END EMAIL CONFIGURATION
 
-## CACHE CONFIGURATION
+# CACHE CONFIGURATION
 CACHES = {
     "default": {
         "BACKEND": "django.core.cache.backends.locmem.LocMemCache",
     }
 }
-## END CACHE CONFIGURATION
+# END CACHE CONFIGURATION
 
-## TOOLBAR CONFIGURATION
+# TOOLBAR CONFIGURATION
 INSTALLED_APPS += ("debug_toolbar",)
 MIDDLEWARE += ("debug_toolbar.middleware.DebugToolbarMiddleware",)
-## END TOOLBAR CONFIGURATION
+# END TOOLBAR CONFIGURATION
